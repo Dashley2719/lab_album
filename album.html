@@ -11,17 +11,28 @@
             li {
                 font-weight: bold;
                 color: grey;
+                font-style: italic;
+            }
+            div.image {
+                background-image: url("Cash.jpg");
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+                background-position-x: center;
+                background-position-y: top;
+                background-size: 400px;
+            }
+            #text {
+                height: 400px;
+                border: none;
             }
         </style>
 
 
     </head>
     <body>
-         <center><img src="Cash.jpg" 
-        alt="Johnny Cash" 
-        style="width: 250px; height: 250px;"
-        align="middle"/></center>
-
+        <div class="image">
+        <img/>
+        <input id="text">
         <h2 align="center">Cash</h2>
 
         <h4 align="center"> 
@@ -31,11 +42,12 @@
             <br/>
         <hr/>
         <h2 align="center" style="color:purple;font-weight:bold;">Band Member and Producers</h2>
-
+        
         <ol style="list-style-type: disk;">
             <li>Johnny Cash - Lead singer/Guitar</li>
             <li>Rick Rubin - Producer</li>
         </ol>
+        
 
             <table border="-1" width="100%" align="center">
                 <caption align="center">Tracks</caption>
@@ -60,5 +72,7 @@
                     <td>2:46</td>
                 </tr>
             </table>
+        </div>
+        </div>
     </body>
 </html>
