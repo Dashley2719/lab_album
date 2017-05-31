@@ -1,48 +1,83 @@
 <!DOCTYPE html>
-<html>
-    <head>
+    <html lang="en">
+        <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Album</title>
-
-        <link href="albumStyles.css"
-                rel="stylesheet"
-                type="text/css" />
-
-        <style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style type="text/css">    
             li {
                 font-weight: bold;
                 color: grey;
                 font-style: italic;
-            }
-            div.image {
-                background-image: url("Cash.jpg");
-                background-repeat: no-repeat;
-                background-attachment: scroll;
-                background-position-x: center;
-                background-position-y: top;
-                background-size: 400px;
-            }
+                text-align: left;
+                }
+            .image {
+                content: center;
+                height: 400px; 
+                width: 400px;
+                margin-right:250px;
+                }
             #text {
                 height: 400px;
                 border: none;
-            }
+                }
             h4 a:hover {
                 text-decoration: underline;
-            }
+                }
             h4 a {
                 text-decoration: none;
                 background: lime;
-            }
-            table {
+                }
+            table{
                 background: black;
-            }
+                width:100%;
+                border-width: 1px;
+                border-color: whitesmoke;
+                }
+                thead, th {
+                    text-align: center;
+                }
+                tbody tr:nth-child(even) {
+                    background-color: black;
+                }
+                tbody tr:nth-child(odd) {
+                    background-color: navy;
+                }
+                caption {
+                    text-align: center;
+                    font-family: Helvetica;
+                    font-size: 16pt;
+                    font-weight: bold;
+                }
+                div.track-table {
+                    margin:20px;
+                }
+                .everything {
+                    margin-top:240px;
+                }
+                th {
+                    font-weight: bold;
+                }
+
+                td {
+                    font-style: italic;
+                    color: red;
+                }
+                h2 {
+                    font-family: 'Impact';
+                }
         </style>
-
-
     </head>
     <body>
-        <div class="image">
-        <img/>
-        <input id="text">
+        <center><div class="image">
+            <img src="Cash.jpg" class="img-circle" alt="circle image">
+        </div><center>
+        <div class="everything">
         <h2 align="center">Cash</h2>
 
         <h4 align="center"> 
@@ -58,30 +93,33 @@
             <li>Johnny Cash - Lead singer/Guitar</li>
             <li>Rick Rubin - Producer</li>
         </ol>
-        
-
-            <table border="-1" width="100%" align="center">
+        <div class="track-table">
+            <table align="center">
                 <caption align="center">Tracks</caption>
-                <tr bgcolor="grey">
-                    <th>Track #</th>
-                    <th>Track Title</th>
-                    <th>Track Length</th>
-                </tr>
-                <tr align="center">
-                    <td>1</td>
-                    <td>Delia's Gone</td>
-                    <td>2:18</td>
-                </tr>
-                <tr align="center">
-                    <td>2</td>
-                    <td>Let the Train Blow the Whistle</td>
-                    <td>2:16</td>
-                </tr>
-                <tr align="center">
-                    <td>3</td>
-                    <td>The Beast in Me</td>
-                    <td>2:46</td>
-                </tr>
+                <thead>
+                    <tr bgcolor="grey">
+                        <th>Track #</th>
+                        <th>Track Title</th>
+                        <th>Track Length</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr align="center">
+                        <td>1</td>
+                        <td>Delia's Gone</td>
+                        <td>2:18</td>
+                    </tr>
+                    <tr align="center">
+                        <td>2</td>
+                        <td>Let the Train Blow the Whistle</td>
+                        <td>2:16</td>
+                    </tr>
+                    <tr align="center">
+                        <td>3</td>
+                        <td>The Beast in Me</td>
+                        <td>2:46</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
         </div>
